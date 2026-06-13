@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-950">
+    <!-- Promotional banner -->
+    <div class="bg-slate-950 px-4 py-2 text-center text-sm font-medium text-white">
+        Sign up and get 20% off your first order
+    </div>
+
+    <!-- Shared navigation -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="text-2xl font-black tracking-wide">Nostra</a>
+            <button class="mobile-menu-button rounded border border-slate-300 px-3 py-2 text-sm font-semibold md:hidden" aria-label="Open menu">
+                Menu
+            </button>
+            <ul class="hidden items-center gap-8 text-sm font-semibold md:flex">
+                <li><a class="nav-link active" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="#new-arrivals">New Arrival</a></li>
+                <li><a class="nav-link" href="#most-wanted">Most Wanted</a></li>
+                <li><a class="nav-link" href="collections.html">Collections</a></li>
+                <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu hidden border-t border-slate-200 bg-white px-4 py-4 md:hidden">
+            <a href="index.html">Home</a>
+            <a href="#new-arrivals">New Arrival</a>
+            <a href="#most-wanted">Most Wanted</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="overflow-hidden bg-white">
+            <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[1fr_1.15fr] lg:px-8 lg:py-16">
+                <div>
+                    <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-teal-700">Summer collection</p>
+                    <h1 class="max-w-xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">Level up your style with everyday fashion.</h1>
+                    <p class="mt-5 max-w-lg text-base leading-7 text-slate-600">Discover fresh fits, soft textures, and easy layers made for college days, city walks, and weekend plans.</p>
+                    <a href="collections.html" class="mt-8 inline-flex rounded bg-slate-950 px-6 py-3 text-sm font-bold text-white transition hover:bg-teal-700">Shop Now</a>
+                </div>
+                <div class="hero-grid">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Model wearing a summer outfit" class="hero-image hero-image-large">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80" alt="Editorial fashion portrait" class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Streetwear fashion look" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand strip -->
+        <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-black">Brands</h2>
+            <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+                <div class="brand-card">Puma</div>
+                <div class="brand-card">Adidas</div>
+                <div class="brand-card">Nike</div>
+                <div class="brand-card">Levi's</div>
+                <div class="brand-card">Zara</div>
+                <div class="brand-card">H&M</div>
+            </div>
+        </section>
+
+        <!-- Customer promise cards -->
+        <section class="border-y border-slate-200 bg-white">
+            <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+                <div class="grid gap-4 lg:grid-cols-[0.8fr_1fr] lg:items-end">
+                    <h2 class="text-3xl font-black">We provide the best customer experience</h2>
+                    <p class="text-slate-600">Original products, easy returns, fresh arrivals, and fast delivery for every shopper.</p>
+                </div>
+                <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="feature-card">
+                        <h3>Original Products</h3>
+                        <p>Every item is selected from trusted fashion labels and verified partners.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Satisfaction Guarantee</h3>
+                        <p>Simple support and easy returns keep your shopping experience relaxed.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>New Arrival Everyday</h3>
+                        <p>Fresh styles are added regularly so your wardrobe never feels behind.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Fast & Free Shipping</h3>
+                        <p>Quick delivery is available on eligible orders across our main collection.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- New arrival products -->
+        <section id="new-arrivals" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-black">New Arrivals</h2>
+            <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <article class="image-card">
+                    <img src="https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?auto=format&fit=crop&w=600&q=80" alt="Blue denim jacket">
+                    <a href="collections.html">Shop Now</a>
+                </article>
+                <article class="image-card">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=80" alt="Modern cream dress">
+                    <a href="collections.html">Shop Now</a>
+                </article>
+                <article class="image-card">
+                    <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=600&q=80" alt="Casual shirt outfit">
+                    <a href="collections.html">Shop Now</a>
+                </article>
+                <article class="image-card">
+                    <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=600&q=80" alt="Streetwear jacket outfit">
+                    <a href="collections.html">Shop Now</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Most wanted products -->
+        <section id="most-wanted" class="bg-white">
+            <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-black">Most Wanted</h2>
+                <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <article class="sale-card">
+                        <span>Sale</span>
+                        <img src="https://images.unsplash.com/photo-1506629905607-d405d7d3b0d2?auto=format&fit=crop&w=600&q=80" alt="Classic blazer">
+                    </article>
+                    <article class="sale-card">
+                        <span>Sale</span>
+                        <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=600&q=80" alt="Casual menswear outfit">
+                    </article>
+                    <article class="sale-card">
+                        <span>Sale</span>
+                        <img src="https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?auto=format&fit=crop&w=600&q=80" alt="Fashion coat">
+                    </article>
+                    <article class="sale-card">
+                        <span>Sale</span>
+                        <img src="https://images.unsplash.com/photo-1560243563-062bfc001d68?auto=format&fit=crop&w=600&q=80" alt="Minimal sneakers">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limited offer -->
+        <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+            <div class="offer-panel">
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80" alt="Limited offer fashion model">
+                <div>
+                    <h2>Limited Offer</h2>
+                    <p>Get 35% off for the first 30 customers this week.</p>
+                    <a href="collections.html">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter signup -->
+        <section class="newsletter-section">
+            <h2>Join our newsletter</h2>
+            <p>Get exclusive discounts, style updates, and early product drops.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h2>Nostra</h2>
+        <p>Fresh fashion for everyday confidence.</p>
+        <p>&copy; 2026 Nostra.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

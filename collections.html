@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-950">
+    <div class="bg-slate-950 px-4 py-2 text-center text-sm font-medium text-white">
+        Sign up and get 20% off your first order
+    </div>
+
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="text-2xl font-black tracking-wide">Nostra</a>
+            <button class="mobile-menu-button rounded border border-slate-300 px-3 py-2 text-sm font-semibold md:hidden" aria-label="Open menu">
+                Menu
+            </button>
+            <ul class="hidden items-center gap-8 text-sm font-semibold md:flex">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link active" href="collections.html">Collections</a></li>
+                <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu hidden border-t border-slate-200 bg-white px-4 py-4 md:hidden">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div class="collections-header">
+            <div>
+                <p class="text-sm font-bold uppercase tracking-[0.22em] text-teal-700">Shop all styles</p>
+                <h1 class="mt-2 text-4xl font-black">Collections</h1>
+            </div>
+            <label class="search-box">
+                <span class="sr-only">Search products</span>
+                <input id="searchInput" type="search" placeholder="Search shirts, dresses, jackets...">
+            </label>
+        </div>
+
+        <section class="mt-8 grid gap-8 lg:grid-cols-[240px_1fr]">
+            <!-- JavaScript reads checked filters from this sidebar -->
+            <aside class="filter-panel">
+                <div>
+                    <h2>Occasion</h2>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="occasion" value="casual"> Casual</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="occasion" value="formal"> Formal</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="occasion" value="party"> Party</label>
+                </div>
+                <div>
+                    <h2>Color</h2>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="color" value="black"> Black</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="color" value="blue"> Blue</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="color" value="green"> Green</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="color" value="white"> White</label>
+                </div>
+                <div>
+                    <h2>Arrival</h2>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="arrival" value="new"> New Arrival</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-group="arrival" value="sale"> Sale</label>
+                </div>
+                <button id="clearFilters" type="button">Clear Filters</button>
+            </aside>
+
+            <section>
+                <div class="mb-4 flex items-center justify-between gap-4">
+                    <p id="resultCount" class="text-sm font-semibold text-slate-600"></p>
+                </div>
+                <div id="productGrid" class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3"></div>
+                <p id="emptyMessage" class="hidden rounded border border-dashed border-slate-300 bg-white p-8 text-center font-semibold text-slate-600">
+                    No products found. Try another search or filter.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h2>Nostra</h2>
+        <p>Fresh fashion for everyday confidence.</p>
+        <p>&copy; 2026 Nostra.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
